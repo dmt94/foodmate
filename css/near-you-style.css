@@ -1,0 +1,432 @@
+/* Navbar */
+.navbar {
+  background-color: #EEFFBE;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 0;
+  z-index: 10;
+}
+
+.navbar-toggler {
+  background-color: #a5fd87a7;
+  border: none;
+}
+
+.navbar-brand {
+  display: flex;
+  font-size: 27px;
+  font-family: 'Inter';
+  font-weight: 900;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+}
+
+.navbar-brand-logo {
+  max-width: 30px;
+  margin: 5px;
+}
+
+.nav-item {
+  /* margin: 20px; */
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: 'Inter';
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > a {
+  color: rgb(7, 7, 7);
+  font-family: 'Inder';
+  border-bottom: 7px solid rgba(43, 43, 43, 0);
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > .np-link:hover {
+  border-bottom: 7px solid rgb(43, 43, 43);
+}
+
+.navbar-collapse > .navbar-nav > .nav-item > #platinum-link:hover {
+  border-bottom: 7px solid rgb(156, 131, 255);
+}
+
+.switch-btn-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 5rem;
+  top: 5rem;
+  padding: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 239, 116);
+  -webkit-transition: .4s;
+  transition: .4s;
+  outline: 2px solid black;
+}
+
+.slider:before {
+  position: absolute;
+  display: flex;
+  content: "Fun Mode";
+  font-family: 'Inder';
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 100px;
+  left: 20px;
+  /* bottom: 2px; */
+  background-color: rgb(230, 209, 255);
+  outline: 2px solid black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3c3c3c;
+  outline: 2px solid black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #a5fd87;
+  outline: 2px solid black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: #60fcff;
+  content: "Cool Mode";
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 20px;
+}
+
+/*page*/
+
+body {
+  background-color: #c0bbff;
+}
+
+.main-container {
+  background-color: #fffde6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 65.5px;
+  height: auto;
+}
+
+.wrapper {
+  background-color: rgba(250, 235, 215, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  width: 100%;
+}
+
+.first-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: 'Inter';
+  font-weight: 700;
+  padding: 20px;
+}
+
+.span-title {
+  font-size: 17px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+.app-img {
+  width: 100px;
+}
+
+/* Second "column" */
+
+.second-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-div {
+  width: 80%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.address-background {
+  background-color: rgb(255, 255, 172);
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 52px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 50%;
+}
+
+#address {
+  transform: translate(10px, -40px);
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 52px;
+  padding: 14px;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.address-submit-button {
+  z-index: 5;
+  font-size: 15px;
+  font-family: 'Inter';
+  text-transform: uppercase;
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(18, 18, 18, 0.993);
+  color: rgb(194, 237, 255);
+  border: none;
+  outline: none;
+  transform: translate(10px, -40px);
+  
+}
+
+.address-submit-button:hover {
+  background-color: rgba(88, 78, 105, 0.993);
+  color: rgb(194, 237, 255);
+}
+
+.address-submit-button:hover ~ #address {
+  transform: translate(0px, -30px);
+  background-color: #dfd5ffdd;
+  border: 2px solid black;
+  transition: all ease-in-out 1s;
+}
+
+/* Third "column" */
+
+.potential-matches, .third-column {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.potential-matches {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.potential-matches-title {
+  font-size: 20px;
+  font-family: 'Inter';
+}
+
+.sparkle {
+  width: 50px;
+}
+
+.third-column {
+  background-color: rgba(184, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant {
+  width: 300px;
+  height: 350px;
+  background-color: rgba(185, 255, 255, 0);
+  /* border: 1px solid black; */
+  /* margin: 20px; */
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card, .restaurant-title {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  transition: 1s all ease-in-out;
+}
+
+.bottom-stars {
+  position: relative;
+  background-color: rgba(240, 248, 255, 0.49);
+}
+
+/* Card Utility */
+
+.info-container {
+  display: flex;
+  width: 230px;
+  height: 200px;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  transform: translate(0, 75px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 3;
+  justify-content:flex-end;
+  align-items: center;
+  border: 1px solid rgb(255, 254, 254);
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.info-card > span {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* Top Card */
+ 
+.top-name {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.top-name:hover {
+  transform: translate(0px, -10px);
+  transition: all ease-in-out 1s;
+}
+
+.top-name:hover ~ .middle-type {
+  transform: translate(0, 140px);
+}
+
+.top-name:hover ~ .bottom-stars {
+  transform: translate(0, 180px);
+}
+
+.first-image {
+  background: url(/images/pexels-anna-tis-7835285.jpg) no-repeat center center/cover;
+}
+
+.res-name {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px;
+  color:black;
+}
+
+.res-name:hover {
+  text-decoration: underline;
+  color:rgb(38, 51, 100);
+}
+
+/* Middle Card */
+
+.middle-type {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.675);
+  z-index: 2;
+}
+
+.middle-container {
+  display: flex;
+  width: 250px;
+  height: 200px;
+  flex-direction: column;
+  position: absolute;
+  /* background-color: #f9fff4ac; */
+  /* transform: translate(0, 18px); */
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  z-index: 3;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.bottom-container {
+  display: flex;
+  width: 250px;
+  height: 200px;
+  flex-direction: column;
+  position: absolute;
+  /* background-color: #fff4f487; */
+  /* transform: translate(0, 18px); */
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  justify-content:flex-end;
+  align-items: center;
+}
+
+/* Second Restaurant */
+
+.second-image {
+  background: url(/images/pexels-photo-5696477.jpg) no-repeat center center/cover;
+}
+
+/* Third Restaurant */
+.third-image {
+  background: url(/images/pexels-photo-5840089.jpg) no-repeat center center/cover;
+}
+
+/* Animation */
+
