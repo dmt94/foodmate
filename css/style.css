@@ -1398,3 +1398,9 @@ hr {
 
 /* Map */
 
+/* qr-code */
+
+#qr-code {
+  width: 200px;
+  padding: 20px;
+}
