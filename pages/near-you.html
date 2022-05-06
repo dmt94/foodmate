@@ -73,12 +73,15 @@
       <div class="second-column">
         <div class="address-div">
           <div class="address-background">
-            <button type="submit" class="address-submit-button">Search</button>
+            <button type="submit" class="address-submit-button" id="address-btn">Search</button>
             <input type="text" name="address" id="address" class="address-class"
               placeholder="Enter delivery address">
           </div>
   
         </div>
+      </div>
+
+      <div class="current-map" id="map">
       </div>
 
       <div class="potential-matches">
@@ -203,6 +206,77 @@
     </div>
   </div>
 
+  <!--Footer-->
+  <div class="utility-container footer-container">
+    <!--3 columns, 1st column = 3 rows-->
+    <div class="utility-wrapper footer-wrapper">
+      <div class="footer-first-c">
+        <!--each row direction is in column format-->
+        <div class="footer-first-r">
+          <h3 class="footer-logo-title">FOODMATE</h3>
+          <!--app store logos-->
+          <div class="app-store footer-app-store">
+            <img src="/images/apple.png" alt="" class="app-logo">
+            <div class="app-store-download">
+              <span class="span-download">Download on the</span>
+              <span class="span-app-store span-apple">App Store</span>
+            </div>
+          </div>
+          <div class="app-store footer-google-play">
+            <img src="/images/android.png" alt="" class="app-logo">
+            <div class="app-store-download">
+              <span class="span-download">Get it on</span>
+              <span class="span-app-store">Google Play</span>
+            </div>
+          </div>
+          <!--end of app store logos-->
+        </div>
+        <div class="footer-second-r">
+          <div class="footer-link-div">
+            <a href="#" class="footer-links">Get Help</a>
+            <a href="#" class="footer-links">Buy gift cards</a>
+            <a href="#" class="footer-links">Add your restaurant</a>
+            <a href="#" class="footer-links">Sign up to deliver</a>
+            <a href="#" class="footer-links">Save on your first order</a>
+          </div>
+        </div>
+        <div class="footer-third-r">
+          <div class="footer-link-div">
+            <a href="#" class="footer-links">Nearby Restaurants</a>
+            <a href="#" class="footer-links">View all cities</a>
+            <a href="#" class="footer-links">Pickup near me</a>
+          </div>
+        </div>
+      </div>
+      <!--line with animation-->
+      <div class="footer-second-c">
+        <div class="circle"></div>
+        <div class="heart-div">
+          <div id="heart"
+            class="animate__animated animate__pulse animate__infinite"></div>
+        </div>
+        <img src="/images/footer-driver.png" alt="" class="footer-driver">
+        <hr>
+      </div>
+      <!--social media and policy, in row direction format-->
+      <div class="footer-third-c">
+        <div class="social-media-div">
+          <a href="#"><img src="/images/social-media/twitter.png" alt=""
+              class="twitter social-media-img"></a>
+          <a href="#"><img src="/images/social-media/instagram.png" alt=""
+              class="instagram social-media-img"></a>
+          <a href="#"><img src="/images/social-media/facebook.png" alt=""
+              class="facebook social-media-img"></a>
+        </div>
+        <div class="privacy-policy-div">
+          <a href="#" class="privacy">Privacy Policy</a>
+          <a href="#" class="privacy">Terms</a>
+          <a href="#" class="privacy">Pricing</a>
+          <span class="privacy copyright">&#9426;2022 Foodmate Inc.</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -212,7 +286,9 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <!--JavaScript-->
-  <script src="javascript/main.js"></script>
+  <script src="/javascript/n-y.js"></script>
+  <script
+  async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwrQLmc2dSFECvX-pLp2blZFuqEkWawo&libraries=places&callback=initMap"></script>
 </body>
 
 </html>

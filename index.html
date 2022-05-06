@@ -92,9 +92,11 @@
           <!--email button container-->
         <div class="container-md email-div">
           <div class="email-button-bottom">
-            <button type="submit" class="email-submit-button">Sign Up</button>
-            <input type="email" name="email" id="email" placeholder="your email"
-              class="email-input">
+            <form>
+              <button type="submit" class="email-submit-button">Sign Up</button>
+              <input type="email" required name="email" id="email"
+                placeholder="your email" class="email-input">
+            </form>
           </div>
         </div>
       </div>
@@ -330,7 +332,8 @@
     <div class="utility-wrapper deliv-loc-wrapper">
       <div class="address-div">
         <div class="address-background">
-          <button type="submit" class="address-submit-button">Search</button>
+          <button type="submit" class="address-submit-button"
+            id="address-verif-button">Search</button>
           <input type="text" name="address" id="address" class="address-class"
             placeholder="Enter delivery address">
         </div>
@@ -340,7 +343,7 @@
         <div class="deliv-loc-title">
           <img src="/images/sparkle.png" alt="" class="sparkle">
           <h3 class="find-your-foodmate">Lets find your</h3>
-          <h1 class="foodmate-title">FOODMATE</h1>
+          <h1 class="foodmate-title" id="foodmate-title-id">FOODMATE</h1>
           <img src="/images/heart-dish.png" alt=""
             class="heart-dish animate__animated animate__jello animate__infinite">
         </div>
@@ -466,7 +469,7 @@
   <!--JavaScript-->
   <script src="javascript/main.js"></script>
   <script
-   async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwrQLmc2dSFECvX-pLp2blZFuqEkWawo&libraries=places&callback=initMap"></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwrQLmc2dSFECvX-pLp2blZFuqEkWawo&libraries=places&callback=initMap"></script>
 </body>
 
 </html>

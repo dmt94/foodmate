@@ -26,9 +26,6 @@ function initMap() {
 
   ];
 
-  
-  
-
   const infoWindow = new google.maps.InfoWindow();
 
   //ids
@@ -63,7 +60,6 @@ function initMap() {
       map,
       title: `${title}`,
       optimized: false,
-      draggable: false,
       animation: google.maps.Animation.DROP,
       icon: image,
     });
@@ -91,7 +87,16 @@ function initMap() {
     }
 
   });
-  
+
+  autocomplete = new google.maps.places.Autocomplete(document.getElementById('address'),
+  {
+    componentRestrictions: {'country': ['us']},
+    fields: ['geometry', 'name', 'formatted_address'],
+    types: ['address'],
+  });
+
+  let addressButton = document.getElementById('address-verif-button');
+
 }
 
 window.initMap = initMap;
